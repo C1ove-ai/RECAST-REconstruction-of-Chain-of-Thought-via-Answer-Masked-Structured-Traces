@@ -344,30 +344,36 @@ recast-cot-reverse/
 
 MIT. See [LICENSE](LICENSE).
 
+## Citation and attribution
+
+RECAST is released under the MIT License. If you use RECAST in academic work,
+please cite the repository below while the paper is in preparation:
+
+```bibtex
+@misc{recast2026,
+  title        = {RECAST: {REconstruction} of {Chain-of-Thought} via {Answer-Masked} {Structured} {Traces}},
+  author       = {Your Name},
+  year         = {2026},
+  howpublished = {\url{https://github.com/C1ove-ai/RECAST-REconstruction-of-Chain-of-Thought-via-Answer-Masked-Structured-Traces}},
+  note         = {Paper in preparation; GitHub repository}
+}
+```
+
+If you use RECAST in a product, demo, blog post, course, or derivative tool,
+please mention that it is built with **RECAST** and link back to this
+repository. If you redistribute a modified version, please keep this
+citation/attribution section. Opening a GitHub issue or Discussion to share
+your use case is optional but appreciated.
+
+When the paper is published, replace the BibTeX entry above with the official
+citation (venue, DOI, etc.).
+
+> Note: the MIT License does not legally require citation; this section is an
+> academic/community attribution request, not an additional license condition.
+
 ## Acknowledgements
 
 This project builds on ideas from step-by-step distillation, self-training and
 faithfulness research, including LIMO, DeepSeek-R1, Distilling Step-by-Step, STaR,
 Self-Consistency and related work. See `eval/docs/metrics.md` and
 `eval/docs/training_methods.md` for references.
-
-## Citation and attribution
-
-RECAST is released under the MIT License. If you use RECAST in academic work,
-please cite the repository below while the paper is in preparation:
-```bibtex
-@misc{recast2026,
-  title        = {RECAST: REconstruction of Chain-of-Thought via Answer-Masked Structured Traces},
-  author       = {Qi Wang},
-  year         = {2026},
-  howpublished = {\url{https://github.com/C1ove-ai/RECAST-REconstruction-of-Chain-of-Thought-via-Answer-Masked-Structured-Traces}},
-  note         = {Paper in preparation; GitHub repository}
-}
-If you use RECAST in a product, demo, blog post, course, or derivative tool, please:
-
-mention that it is built with RECAST and link back to this repository;
-keep this citation/attribution section when redistributing a modified version;
-optionally open a GitHub issue or Discussion to share your use case — it helps the project and is always appreciated.
-When the paper is published, replace the BibTeX entry above with the official citation (venue, DOI, etc.).
-
-Note: the MIT License does not legally require citation; this section is an academic/community attribution request, not an additional license condition.
