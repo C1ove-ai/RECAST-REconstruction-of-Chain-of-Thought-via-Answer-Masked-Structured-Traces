@@ -148,6 +148,7 @@ Key files are gitignored and never printed by the pipeline.
 | `gsm8k` | GSM8K test split | auto-downloaded to `testset/` |
 | custom | local JSONL | one row per line |
 
+You can add more datasets！
 Custom dataset format:
 
 ```json
