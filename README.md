@@ -11,6 +11,7 @@ The reconstructed rationale is a **proxy** for the target model's hidden reasoni
 ground truth — evaluate it downstream (student accuracy, faithfulness probes, human/LLM
 judging) rather than assuming it is the "real" CoT.
 
+Research use only; users are responsible for complying with their model provider's terms！！！
 ---
 
 ## Pipeline
