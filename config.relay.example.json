@@ -1,0 +1,5 @@
+{
+  "base_url": "https://your-relay.example/v1",
+  "model": "your-target-model-id",
+  "api_key": "sk-REPLACE_ME"
+}

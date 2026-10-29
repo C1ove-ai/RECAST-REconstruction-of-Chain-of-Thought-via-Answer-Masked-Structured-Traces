@@ -1,0 +1,6 @@
+# Core pipeline
+openai>=1.40
+sympy>=1.12
+
+# Optional training/eval stack (CUDA GPU recommended):
+# pip install -r eval/requirements.txt
