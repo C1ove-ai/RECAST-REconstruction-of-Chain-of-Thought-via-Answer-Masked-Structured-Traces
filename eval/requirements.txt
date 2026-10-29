@@ -1,0 +1,18 @@
+# 训练/评测服务器依赖（Linux + CUDA 推荐）
+#
+# 本仓库脚本同时兼容 transformers 4.46+ 与 5.x（会自动选择 torch_dtype/dtype）。
+# 没有 GPU 的机器只用于数据构建/答案抽取/结果汇总。
+
+torch>=2.3
+transformers>=4.46
+peft>=0.12
+bitsandbytes>=0.43      # QLoRA 4-bit（Linux/CUDA）
+accelerate>=0.34
+
+# 数据与评测
+datasets>=2.20          # download_benchmarks.py
+sympy>=1.12             # 数学答案等价判断（math_verify.py）
+openai>=1.40            # 教师 API 评测 / 答案抽取
+
+# 可选：Linux 上更快的学生模型批量生成（run_eval.py 目前走 HF generate，不依赖 vLLM）
+# vllm>=0.6

@@ -1,0 +1,6 @@
+interface:
+  display_name: "RECAST CoT Reverse"
+  short_description: "Run target-model CoT reversal end-to-end"
+  default_prompt: "Use $recast-cot-reverse to run CoT reversal on math500 with claude-sonnet-5-5."
+policy:
+  allow_implicit_invocation: true

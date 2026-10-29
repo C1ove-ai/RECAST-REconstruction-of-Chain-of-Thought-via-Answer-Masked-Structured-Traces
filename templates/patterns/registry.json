@@ -1,0 +1,126 @@
+{
+  "version": "1.0",
+  "profiles": {
+    "math": {
+      "primary": "math_solver",
+      "secondary": "red_blue",
+      "description": "算术、代数、几何、数论、组合、竞赛/证明题：需要逐步推导 + 具体验证"
+    },
+    "code": {
+      "primary": "pair_programming",
+      "secondary": "red_blue",
+      "description": "代码生成、调试、算法实现：需要 driver-navigator、测试和反例"
+    },
+    "science": {
+      "primary": "expert_panel",
+      "secondary": "red_blue",
+      "description": "物理/化学/生物/跨学科 STEM：需要多视角拆解、假设检验、风险清单"
+    },
+    "logic": {
+      "primary": "socratic",
+      "secondary": "expert_panel",
+      "description": "逻辑谜题、定义辨析、条件推理：需要先澄清目标和约束"
+    },
+    "planning": {
+      "primary": "socratic",
+      "secondary": "retrospective",
+      "description": "规划、调度、agent 任务：需要先澄清目标/约束/成功标准，再给计划"
+    },
+    "open_ended": {
+      "primary": "retrospective",
+      "secondary": "socratic",
+      "description": "开放写作、产品/需求、复盘类任务：先解决问题，再复盘和扩展需求"
+    },
+    "general": {
+      "primary": "socratic",
+      "secondary": "math_solver",
+      "description": "无法判断时的兜底：先澄清问题，再尝试求解"
+    }
+  },
+  "patterns": {
+    "math_solver": {
+      "file": "math_solver.txt",
+      "description": "老师读题 + 学生推导 + 学生验证（证明题转为攻击漏洞）"
+    },
+    "socratic": {
+      "file": "socratic.txt",
+      "description": "连续追问目标/约束/假设/反例，收敛后再求解"
+    },
+    "expert_panel": {
+      "file": "expert_panel.txt",
+      "description": "多角色专家会诊，拆子问题、依赖、风险，最后收敛"
+    },
+    "pair_programming": {
+      "file": "pair_programming.txt",
+      "description": "Driver-Navigator 结对编程 + 测试/反例"
+    },
+    "red_blue": {
+      "file": "red_blue.txt",
+      "description": "蓝队给方案、红队攻击漏洞/反例/边界，裁判收敛"
+    },
+    "retrospective": {
+      "file": "retrospective.txt",
+      "description": "先解决问题，再用复盘/PDCA/工作坊扩展需求"
+    }
+  },
+  "datasets": {
+    "gsm8k": "math",
+    "math500": "math",
+    "math": "math",
+    "amc23": "math",
+    "amc": "math",
+    "aime24": "math",
+    "aime25": "math",
+    "aime": "math",
+    "minerva": "math",
+    "olympiadbench": "math",
+    "theoremqa": "math",
+    "humaneval": "code",
+    "mbpp": "code",
+    "livecodebench": "code",
+    "apps": "code",
+    "codeforces": "code",
+    "code": "code",
+    "gpqa": "science",
+    "scienceqa": "science",
+    "scibench": "science",
+    "mmlu_stem": "science",
+    "bbh": "logic",
+    "logiqa": "logic",
+    "lsat": "logic",
+    "logic": "logic",
+    "planbench": "planning",
+    "tau_bench": "planning",
+    "agentbench": "planning",
+    "planning": "planning",
+    "open_ended": "open_ended"
+  },
+  "keywords": {
+    "math": [
+      "$", "\\frac", "\\sum", "\\int", "\\sqrt", "prove", "证明", "求证", "求",
+      "calculate", "compute", "equation", "integer", "divisor", "prime", "polynomial",
+      "prime", "modulo", "probability", "area", "volume", "解方程", "计算"
+    ],
+    "code": [
+      "```", "def ", "function", "class ", "debug", "program", "code", "algorithm",
+      "implement", "compile", "runtime", "traceback", "bug", "函数", "代码", "程序",
+      "算法", "报错", "实现"
+    ],
+    "science": [
+      "physics", "chemistry", "biology", "experiment", "quantum", "molecule", "cell",
+      "thermodynamic", "relativity", "物理", "化学", "生物", "实验", "量子", "分子"
+    ],
+    "logic": [
+      "logic", "puzzle", "deduce", "infer", "proposition", "syllogism", "knights",
+      "命题", "逻辑", "推理", "谜题", "真假", "排列", "谁在说谎"
+    ],
+    "planning": [
+      "plan", "schedule", "design", "requirement", "architecture", "workflow",
+      "milestone", "agent", "规划", "设计", "需求", "流程", "排期", "架构"
+    ],
+    "open_ended": [
+      "essay", "discuss", "opinion", "review", "improve", "write a", "policy",
+      "总结", "评论", "方案", "扩展", "改进", "谈谈你的看法"
+    ]
+  }
+}
