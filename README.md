@@ -61,7 +61,7 @@ jobs/<YYYYMMDD-HHMMSS>_<dataset>_<target-model>_<pattern>/
   OpenAI-compatible endpoint + key; defaults are the authors' reference setup.
 - **SFT-ready output** — chat JSONL with assistant-only loss, plus optional LoRA/QLoRA
   training and evaluation harness under `eval/`.
-- **Agent skill** — say "帮我用 math500 跑一下 claude 的 CoT 逆向" in Codex / Claude Code /
+- **Agent skill** — say "help me run math500 in claude for CoT reverse" in Codex / Claude Code /
   DeepSeek Harness after installing the skill.
 
 ---
