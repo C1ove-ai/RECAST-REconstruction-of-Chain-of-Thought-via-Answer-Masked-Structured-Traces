@@ -72,6 +72,8 @@ jobs/<YYYYMMDD-HHMMSS>_<dataset>_<target-model>_<pattern>/
 Requirements: Python 3.10+ (Windows/Linux). The core pipeline only needs `openai`; the
 optional training/eval stack is described in [`eval/requirements.txt`](eval/requirements.txt).
 
+Reproduce it in one sentence—you can even just tell your AI agent: 'Please clone https://github.com/C1ove-ai/RECAST-REconstruction-of-Chain-of-Thought-via-Answer-Masked-Structured-Traces.git, and then install the recast-cot-reverse skill following skills/README.md in the repo.'
+
 ```bash
 git clone <your-repo-url> recast-cot-reverse
 cd recast-cot-reverse
